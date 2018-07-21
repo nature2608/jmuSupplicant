@@ -22,39 +22,39 @@ const static unsigned int EAPOL_VERSION_LENGTH = 1;
 const static unsigned int EAPOL_TYPE_LENGTH = 1;
 const static unsigned int EAPOL_FRAME_LENGTH = 2;
 const static unsigned int ETHERNET_PADDING_LENGTH = 42;
-const static unsigned int ETHERNET_TRAILER_LENGTH = 507;
+const static unsigned int ETHERNET_TRAILER_LENGTH = 464;
 
 const static unsigned int EAPOL_START_IP_ADDR = 0X17;
 const static unsigned int EAPOL_START_NETMASK_ADDR = 0X1B;
 const static unsigned int EAPOL_START_GATEWAY_ADDR = 0X1F;
-const static unsigned int EAPOL_START_SERVICE_NAME_ADDR = 0x193;
+const static unsigned int EAPOL_START_SERVICE_NAME_ADDR = 0x163;
 
 // EAP RESPONSE IDENTITY FRAME
 const static unsigned int EAP_HEADER_LENGTH = 4;
 const static unsigned int EAP_TYPE_LENGTH = 1;
-const static unsigned int EAP_IDENTITY_PADDING_LENGTH = 25;
-const static unsigned int EAP_IDENTITY_TRAILER_LENGTH = 524;
-const static unsigned int EAP_IDENTITY_RESPONSE_SERVICE_NAME_ADDR = 0x1a4;
-const static unsigned int EAP_IDENTITY_RESPONSE_IP_ADDR = 0x28;
-const static unsigned int EAP_IDENTITY_RESPONSE_NETMASK_ADDR = 0X2c;
-const static unsigned int EAP_IDENTITY_RESPONSE_GATEWAY_ADDR = 0X30;
-
+const static unsigned int EAP_IDENTITY_PADDING_LENGTH = 27;
+const static unsigned int EAP_IDENTITY_TRAILER_LENGTH = 479;
+const static unsigned int EAP_IDENTITY_RESPONSE_SERVICE_NAME_ADDR = 0x172;
+const static unsigned int EAP_IDENTITY_RESPONSE_IP_ADDR = 0x26;
+const static unsigned int EAP_IDENTITY_RESPONSE_NETMASK_ADDR = 0X2a;
+const static unsigned int EAP_IDENTITY_RESPONSE_GATEWAY_ADDR = 0X2e;
+const static unsigned int EAP_IDENTITY_RESPONSE_SECONDRY_MAC_ADDR = 0X7b;//新加mac填充位置
 const static unsigned int EAP_ID_ADDRESS_IN_EAP_IDENTITY_REQUEST_FRAME = 0X13;
 
 // EAP RESPONSE MD5 CHALLENGE FRAME
 const static unsigned int EAP_MD5_VALUE_SIZE_LENGTH = 1;
 const static unsigned int EAP_MD5_VALUE_LENGTH = 16;
-const static unsigned int EAP_MD5_CHALLENGE_PADDING_LENGTH = 8;
-const static unsigned int EAP_MD5_CHALLENGE_TRAILER_LENGTH = 545;
-const static unsigned int SERVICE_NAME_LENGTH = 32;
+const static unsigned int EAP_MD5_CHALLENGE_PADDING_LENGTH = 10;
+const static unsigned int EAP_MD5_CHALLENGE_TRAILER_LENGTH = 512;
+const static unsigned int SERVICE_NAME_LENGTH = 8;
 
-const static unsigned int EAP_MD5_RESPONSE_IP_ADDR = 0X39;
-const static unsigned int EAP_MD5_RESPONSE_NETMASK_ADDR = 0X3D;
-const static unsigned int EAP_MD5_RESPONSE_GATEWAY_ADDR = 0X41;
-const static unsigned int EAP_MD5_RESPONSE_COMPUTE_PASSWORD_ADDR = 0XB8;
-const static unsigned int EAP_MD5_RESPONSE_COMPUTE_V4_ADDR = 0X121;
-const static unsigned int EAP_MD5_RESPONSE_SERVICE_NAME_ADDR = 0X1B5;
-
+const static unsigned int EAP_MD5_RESPONSE_IP_ADDR = 0X37;
+const static unsigned int EAP_MD5_RESPONSE_NETMASK_ADDR = 0X3c;
+const static unsigned int EAP_MD5_RESPONSE_GATEWAY_ADDR = 0X3f;
+const static unsigned int EAP_MD5_RESPONSE_COMPUTE_PASSWORD_ADDR = 0X98;
+const static unsigned int EAP_MD5_RESPONSE_COMPUTE_V4_ADDR = 0X10b;
+const static unsigned int EAP_MD5_RESPONSE_SERVICE_NAME_ADDR = 0X193;
+const static unsigned int EAP_MD5_RESPONSE_SECONDRY_MAC_ADDR = 0X8c;////新加mac填充位置
 const static unsigned int EAP_ID_ADDRESS_IN_EAP_MD5_REQUEST_FRAME = 0X13;
 const static unsigned int EAP_MD5_VALUE_SIZE_ADDRESS_IN_EAP_MD5_REQUEST_FRAME = 0X17;
 
